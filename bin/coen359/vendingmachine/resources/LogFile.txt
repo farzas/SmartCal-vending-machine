@@ -1,0 +1,16 @@
+supervisor         2015-08-21
+admin              2015-08-23
+admin              2015-08-24
+admin              2015-08-24
+admin              2015-08-24
+supervisor         2015-08-25
+admin              2015-08-25
+supervisor         2015-08-25
+admin              2015-08-26
+supervisor         2015-08-26
+admin              2015-08-26
+admin              2015-08-26
+admin              2015-08-26
+admin              2015-08-27
+admin              2015-08-27
+supervisor 		   2015-08-27

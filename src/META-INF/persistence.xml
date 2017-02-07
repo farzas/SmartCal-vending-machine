@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PersistenceUnit" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+     <class>coen359.vendingmachine.smartcard.SmartCard</class>
+     <class>coen359.vendingmachine.product.Product</class>
+     <class>coen359.vendingmachine.product.Beverage</class>
+     <class>coen359.vendingmachine.product.Candy</class>
+     <class>coen359.vendingmachine.product.Sandwich</class>
+     <class>coen359.vendingmachine.admin.Admin</class>
+     <class>coen359.vendingmachine.product.nutritionalinfo.NutritionalInfo</class>
+     <class>coen359.vendingmachine.admin.log.AdminLog</class>
+     <class>coen359.vendingmachine.admin.vmproduct.VendingMachine</class>
+     <class>coen359.vendingmachine.vendingmachinestat.VendingMachineProduct</class>
+     <class>coen359.vendingmachine.statistics.revenue.VendingMachineProduct </class>
+     <class>coen359.vendingmachine.admin.userfeedback.UserFeedback</class>
+     <class>coen359.vendingmachine.statistics.revenue.VendingMachineProductPurchased</class>
+     <class>coen359.vendingmachine.admin.moneymanagement.AdminMoneyRefill</class>
+     <class>coen359.vendingmachine.user.payment.VMCurrency</class>
+     <class>coen359.vendingmachine.user.product.VMProductList</class>
+     
+       <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/vending_machine?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      
+      <!-- Added to automatically create tables -->
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      
+    </properties>
+  </persistence-unit>
+</persistence>
